@@ -1,5 +1,5 @@
 #include "mbed.h"
-#include "ultrasonic.h"
+#include "ultrasonicSensor.h"
 
 ultrasonicSensor::ultrasonicSensor(PinName triggerPin, PinName echoPin) : _triggerPin(new DigitalOut(triggerPin)), _echoPin(new DigitalIn(echoPin)) { setCorrection(); }
 

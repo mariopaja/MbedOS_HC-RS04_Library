@@ -1,5 +1,5 @@
-#ifndef ULTRASONIC_H
-#define ULTRASONIC_H
+#ifndef ULTRASONICSENSOR_H
+#define ULTRASONICSENSOR_H
 #include "mbed.h"
 
 class ultrasonicSensor {
@@ -7,6 +7,7 @@ private:
     DigitalOut* _triggerPin;
     DigitalIn* _echoPin;
     int correction = 0;
+    Timer timer;
 
     int readEchoPin();
 
